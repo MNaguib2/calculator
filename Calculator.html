@@ -1,70 +1,11 @@
-<html> 
-<head> 
-	<script> 
-		
-		function dis(val) 
-		{ 
-			document.getElementById("result").value+=val 
-		} 
-		
-		
-		function solve() 
-		{ 
-		try{
-			let x = document.getElementById("result").value ;
-			let y = eval(x);
-			document.getElementById("result").value = y ;
-			}catch{
-				document.getElementById("result").value = "error";
-			}
-		} 
-		
-
-		function clr() 
-		{ 
-			document.getElementById("result").value = "" 
-		} 
-	</script> 
-	<!-- for styling -->
-	<style> 
-		.title{ 
-		margin-bottom: 10px; 
-		text-align:center; 
-		width: 210px; 
-		color:green; 
-		border: solid black 2px; 
-		} 
-
-		input[type="button"] 
-		{ 
-		background-color:lighter; 
-		color: black; 
-		border: solid black 2px; 
-		width:90% ;
-		height:90%;
-		font-size : 4rem;
-		}
-		input[type="button"]:hover
-		{ 
-		background: 	#BEBEBE; 
-		width:80% ;
-		height:80%; 
-		}
-
-		input[type="text"] 
-		{ 
-		height: 95%;
-		background-color:white; 
-		border: solid black 2px; 
-		width:95% 
-		} 
-	</style> 
-	<meta name="viewport" content="width=device-width">
-
-</head> 
-<!-- create table -->
-<body> 
-	<table border="1" align = "center" style="margin-top:15%; width: 60vw; height:75vh; background-color:gray;"> 
+<html>
+	<head>
+		<title>Calculator</title>
+		<link rel = "stylesheet" href="style.css">
+		<script src = "script.js"></script>-->
+	</head>
+	<body>
+		<table border="1" align = "center" style="margin-top:15%; width: 60vw; height:75vh; background-color:gray;"> 
 		<tr align = "center"> 
 			<td colspan="3"><input type="text" style="font-size: 6rem; font-weight:bold;" id="result" readonly/></td> 
 			<td style="width:20%"><input type="button" value="c" onclick="clr()"/> </td> 
@@ -94,5 +35,5 @@
 			<td><input type="button" value="*" onclick="dis('*')"/> </td> 
 		</tr> 
 	</table> 
-</body> 
-</html> 
+	</body>
+</html>
